@@ -1,0 +1,12 @@
+.profile{
+    @include header-font();
+    display: flex;
+
+    color: $black;
+    font-weight: bold;
+
+    & img{
+        margin-left: 16px;
+        border-radius: 50%;
+    }
+}

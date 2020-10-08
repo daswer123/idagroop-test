@@ -1,0 +1,24 @@
+.notify{
+    @include clear-list();
+    display: flex;
+    margin-top: 15px;
+
+    li{
+        margin-right: 30px;
+    }    
+}
+
+li.bell{
+    position: relative;
+
+    margin-right: 60px;
+    &::after{
+        @include after();
+        top: -1px;
+        left: 14px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $pink;
+    }
+}

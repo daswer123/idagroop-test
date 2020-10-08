@@ -1,0 +1,13 @@
+@import "./fonts.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Codec Pro","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
