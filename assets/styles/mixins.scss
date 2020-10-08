@@ -22,3 +22,8 @@
     display: block;
     position: absolute;
 }
+
+@mixin  zero() {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,65 @@
+.addBtn{
+    @include clear-btn();
+    display: flex;
+
+
+    & span{
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color : $blue;
+
+        margin-top: 10px;
+    }
+
+    & div{
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    background-color: $blue;
+    border-radius: 16px;
+    }
+
+
+    & div::before,
+    & div::after{
+        @include after();
+
+        width: 15px;
+        height: 2px;
+
+        background-color: white;
+        top: 22px;
+        left: 17px;
+
+        transform: rotate(90deg);
+    }
+
+    & div::before{
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .addBtn span{
+        margin-right: 10px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .addBtn div{
+        width: 32px;
+        height: 32px;
+
+        border-radius: 8px;
+    }
+
+    .addBtn div::before,
+    .addBtn div::after{
+        left: 9px;
+        top:16px;
+    }
+}

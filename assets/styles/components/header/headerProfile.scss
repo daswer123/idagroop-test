@@ -10,3 +10,24 @@
         border-radius: 50%;
     }
 }
+
+@media (max-width: 750px) {
+    .profile p{
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .profile p{
+        display: none;
+    }
+
+    .profile img{
+        margin-left: 0px;
+        width: 32px;
+        height: 32px;
+
+        margin-top: 8px;
+    }
+}

@@ -1,6 +1,8 @@
 <template>
     <div :class="style.logo">
+      <nuxt-link to="/">
         <img src="../../static/logo.svg" alt="logo">
+      </nuxt-link>
         <p :class="style.inspireText">World's first affordable airsharing</p>
     </div>
 </template>

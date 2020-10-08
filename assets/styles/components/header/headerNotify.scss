@@ -22,3 +22,39 @@ li.bell{
         background-color: $pink;
     }
 }
+
+
+@media (max-width: 750px) {
+    .notify li{
+        margin-right: 15px;
+    }
+
+    li.bell{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bell svg{
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+    }
+
+    .msg{
+        width: 16px;
+        height: 16px;
+        margin-top: 1px;
+    }
+
+    li.bell::after{
+        top: 0px;
+        left: 12px;
+        width: 5px;
+        height: 5px;
+    }
+
+    .notify li{
+        margin-right: 12px;
+    }
+}

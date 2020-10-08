@@ -1,0 +1,49 @@
+.select{
+    position: relative;
+    width: 270px;
+    height: 30px;
+    border: 0;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-image: url("../../../../static/select.svg");
+    appearance: none;
+
+    margin-top: 12px;
+
+}
+
+.arrow{
+    position: relative;
+}
+
+.arrow::after,
+.arrow::before{
+    @include after();
+    background-color: #4959FF;
+    width: 9px;
+    height: 3px;
+
+    right: -20px;
+    top: 16px;
+    transform: rotate(45deg);
+}
+
+.arrow::after{
+    transform: rotate(-45deg);
+    right: -25px;
+    top: 16px;
+}
+
+@media (max-width: 900px) {
+    .select{
+        width: 166px;
+        background-image: url("../../../../static/select-mobile.svg");
+    }
+
+    .arrow::after,
+    .arrow::before{
+    @include after();
+    top: 20px;
+}
+
+}

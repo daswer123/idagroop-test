@@ -1,0 +1,67 @@
+.buy{
+    display: flex;
+    justify-content: space-between;
+
+    background: #F3F4F7;
+    border-radius: 16px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.buy h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    margin-left: 32px;
+
+    font-style: 20px;
+    line-height: 28px;
+    color: $black;
+}
+
+.buy span{
+    color: $pink;
+}
+
+.buy button{
+    @include clear-btn();
+    display: block;
+    margin-right: 32px;
+    border-radius: 12px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    background-color: $blue;
+    color:white;
+}
+
+@media (max-width: 900px) {
+    
+    .buy button{
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 12px;
+
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .buy h3{
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+
+    .buy button{
+        margin-right: 10px;
+        font-size: 12px;
+        line-height: 12px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

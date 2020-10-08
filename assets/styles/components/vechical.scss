@@ -1,0 +1,17 @@
+.vechical{
+    display: flex;   
+}
+
+@media (max-width: 850px) {
+    .vechical{
+        flex-direction: column;   
+    } 
+}
+
+
+@media (max-width: 600px){
+    .vechical{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

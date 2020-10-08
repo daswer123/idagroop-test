@@ -1,0 +1,51 @@
+.vechicalContent{
+    h2{
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: bold;
+        color: $black;
+    }
+
+    h3{
+        font-size: 24px;
+        line-height: 20px;
+
+        color:$black;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey;
+    }
+}
+
+.contentType{
+    @include clear-list();
+    display: flex;
+    margin-top: 32px;
+
+    margin-bottom: 32px;
+}
+
+.contentType li{
+    margin-right: 32px;
+}
+
+.contentType button:hover,
+.contentType button:focus,
+.contentType button:active{
+    color:$blue;
+}
+
+.active{
+    color: $blue;
+}
+
+.contentType button{
+    @include clear-btn();
+    color: $grey;
+
+    font-size: 16px;
+    line-height: 14px;
+}

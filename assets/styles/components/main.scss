@@ -1,0 +1,24 @@
+.vechicalShop{
+    width: 100%;
+    border-radius: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 56px;
+    background-color: $white-grey;
+}
+
+
+
+.listTop{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px){
+    .vechicalShop{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

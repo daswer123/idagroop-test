@@ -1,6 +1,6 @@
 <template>
   <div class="app" :class="style.app">
-      <Header/>
+      <Header :class="style.header"/>
     <main>
       <Nuxt />
     </main>

@@ -1,0 +1,32 @@
+.vechicalImg{
+    margin-right: 65px;
+}
+
+@media (max-width: 1600px) {
+    .vechicalImg img{
+        width: 500px;
+        height: 500px;
+    }
+    
+}
+
+
+@media (max-width: 1250px) {
+    .vechicalImg img{
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+@media (max-width: 850px) {
+
+    .vechicalImg{
+        margin-right: 0;
+    }
+
+    .vechicalImg img{
+        width: 100%;
+        height: auto;
+    }
+}

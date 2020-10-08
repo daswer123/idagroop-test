@@ -1,0 +1,42 @@
+.features ul{
+    @include clear-list();
+    margin-bottom: 45px;
+}
+
+.features li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.features li h4{
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.pilot,
+.challenge{
+    min-width: 80px;
+    height: 100px;
+    border-radius: 16px;
+    background-color: #F3F4F7;
+
+    margin-right: 24px;
+}
+
+.pilot{
+    background-image: url("../../../../static/pilot.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.challenge{
+    background-image: url("../../../../static/challenge.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.specification h4{
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+}

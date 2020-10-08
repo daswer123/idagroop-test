@@ -1,6 +1,8 @@
 .logo{
     display:flex;
 }
+
+
 .inspireText{
     margin-left: 65px;
     margin-top: 20px;
@@ -11,5 +13,14 @@
 @media (max-width: 1050px) {
     .inspireText{
         display: none;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .logo img{
+        width: 113px;
+        height: 32px;
+        margin-top: 10px;
     }
 }
