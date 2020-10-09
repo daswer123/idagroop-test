@@ -27,10 +27,12 @@
     margin-top: 32px;
 
     margin-bottom: 32px;
+    user-select: none;
 }
 
 .contentType li{
     margin-right: 32px;
+    cursor: pointer;
 }
 
 .contentType button:hover,
