@@ -25,7 +25,6 @@ export default {
   methods: {
     setFilter(e){
       const value = e.target.value
-      
       this.$store.dispatch("chooseFilter",value)
     }
   }

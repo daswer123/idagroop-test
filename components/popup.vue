@@ -60,6 +60,8 @@ export default {
         description : this.description,
         rent : this.rent,
         type : "custom",
+        preview: "https://loremflickr.com/100/100/dog",
+        image: "https://loremflickr.com/710/700/dog"
       }
 
       this.$store.dispatch("addNewVechical",data)

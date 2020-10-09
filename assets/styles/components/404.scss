@@ -24,6 +24,12 @@
     color: $grey;
 }
 
+.error button:hover{
+    background-color: $black;
+    cursor: pointer;
+}
+
+
 .error button{
     @include clear-btn();
     font-size: 16px;
@@ -34,6 +40,7 @@
     padding: 17px 32px;
 
     border-radius: 12px;
+    user-select: none;
 }
 
 @media(max-width: 500px){

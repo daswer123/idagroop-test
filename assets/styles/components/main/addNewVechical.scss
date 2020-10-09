@@ -74,3 +74,9 @@
         top:16px;
     }
 }
+
+@media (max-width: 350px) {
+    .addBtn span{
+        display: none;
+    }
+}
