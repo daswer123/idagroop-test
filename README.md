@@ -1,5 +1,11 @@
 # idagroop
 
+* Vue
+* Vuex
+* Nuxt
+* SCSS
+
+
 ## Build Setup
 
 ```bash
