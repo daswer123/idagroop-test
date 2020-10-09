@@ -1,6 +1,6 @@
 <template>
     <div :class="style.team">
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <p>{{team}}</p>
         <h3>Qualified specialists</h3>
         <ul>
             <li>
@@ -34,6 +34,11 @@
 import style from "../../assets/styles/components/vechical/vechicalTeam.scss?module"
 
 export default {
+    props :{
+        team : {
+            type: String
+        }
+    },
     computed: {
         style(){
             return style

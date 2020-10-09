@@ -1,13 +1,13 @@
 <template>
   <li :class="style.vechicalItem">
-      <nuxt-link to="/vechical">
-        <img src='../../static/fly.png'>
+      <a href="#" @click.prevent="openVechical( vech.id )">
+        <img :src="vech.preview">
         <div class="content">
-            <h2>XR-74 "Copper"</h2>
-            <p :class="style.desk">Brief description of the project, in a few lines</p>
-            <p :class="style.price">1 278 $/h</p>
+            <h2>{{ vech.name }}</h2>
+            <p :class="style.desk">{{ vech.description }}</p>
+            <p :class="style.price">{{ vech.rent }} $/h</p>
         </div>
-      </nuxt-link>
+      </a>
   </li>
 </template>
 
@@ -15,11 +15,22 @@
 import style from "../../assets/styles/components/main/vechicalItem.scss?module";
 
 export default {
+  props: {
+    vech : {
+      type: Object
+    }
+    },
   computed : {
     style(){
       return style
     }
   },
+  methods : {
+    async openVechical(id){
+      this.$store.dispatch("fetchOneVechical",id);
+      this.$router.push("/vechical/"+id)
+    }
+  }
 }
 
 </script>

@@ -8,6 +8,13 @@
     & img{
         margin-left: 16px;
         border-radius: 50%;
+        user-select: none;
+    }
+
+    & img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+
     }
 }
 

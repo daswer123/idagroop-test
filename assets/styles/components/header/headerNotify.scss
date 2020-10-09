@@ -2,9 +2,11 @@
     @include clear-list();
     display: flex;
     margin-top: 15px;
+    user-select: none;
 
     li{
         margin-right: 30px;
+        cursor: pointer;
     }    
 }
 
@@ -23,6 +25,17 @@ li.bell{
     }
 }
 
+.msg:hover path,
+.msg:focus path,
+.msg:active path{
+    fill: #344F6A;;
+}
+
+.bell:hover path,
+.bell:active path,
+.bell:focus path{
+    fill: #344F6A;;
+}
 
 @media (max-width: 750px) {
     .notify li{
@@ -46,6 +59,8 @@ li.bell{
         height: 16px;
         margin-top: 1px;
     }
+
+    
 
     li.bell::after{
         top: 0px;

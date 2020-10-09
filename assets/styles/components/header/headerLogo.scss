@@ -2,6 +2,10 @@
     display:flex;
 }
 
+.logo img{
+    margin-top: 6px;
+    user-select: none;
+}
 
 .inspireText{
     margin-left: 65px;
@@ -9,6 +13,7 @@
     width: 280px;
     @include header-font();
 }
+
 
 @media (max-width: 1050px) {
     .inspireText{

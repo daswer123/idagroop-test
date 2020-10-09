@@ -1,7 +1,6 @@
 <template>
     <div :class="style.specification">
-        <p>Amet minim molit non desurunt ulalamco est sit aliqua dolor do ame sint. 
-            Velit officia consequat duis enim velt molit.Extrcitation viniam consequat sunt.</p>
+        <p>{{spec}}</p>
             <div :class="style.features">
                 <h3>Features</h3>
                 <ul>
@@ -28,6 +27,9 @@
 import style from "../../assets/styles/components/vechical/vechicalSpec.scss?module"
 
 export default {
+    props: {spec : {
+        type : String
+    }},
     computed: {
         style(){
             return style

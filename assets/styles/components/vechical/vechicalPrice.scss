@@ -9,6 +9,8 @@
     padding-bottom: 16px;
 }
 
+
+
 .buy h3{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -35,6 +37,15 @@
 
     background-color: $blue;
     color:white;
+
+    user-select: none;
+}
+
+.buy button:hover{
+    transform: scale(1.2);
+    background-color: #1626CC;
+
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {

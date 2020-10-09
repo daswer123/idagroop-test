@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="style.addBtn">
+  <button type="button" :class="style.addBtn" @click="openForm">
       <span>Add new</span>
       <div></div>
   </button>
@@ -14,6 +14,14 @@ export default {
       return style
     }
   },
+  methods : {
+    openForm(){
+      document.body.style.overflow = "hidden";
+      document.querySelector(".app").style.filter = "blur(10px)"
+      this.$store.dispatch("setEditMode");
+      this.$store.dispatch("getAllFiltersSync");
+    }
+  }
 }
 
 </script>

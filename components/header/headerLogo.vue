@@ -1,5 +1,5 @@
 <template>
-    <div :class="style.logo">
+    <div :class="style.logo " >
       <nuxt-link to="/">
         <img src="../../static/logo.svg" alt="logo">
       </nuxt-link>
@@ -9,13 +9,14 @@
 
 <script>
 import style from "../../assets/styles/components/header/headerLogo.scss?module";
+import {mapGetters} from "vuex"
 
 export default {
   computed : {
     style(){
-      console.log(style)
       return style
-    }
+    },
+    ...mapGetters(["getMode"]),
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
     <div :class="style.vechicalImg">
-        <img src="../../static/vechical.jpg" alt="vechical">
+        <img :src="info.image" alt="vechical">
     </div>
 </template>
 
@@ -8,6 +8,11 @@
 import style from "../../assets/styles/components/vechical/vechicalImg.scss?module"
 
 export default {
+    props: {
+        info : {
+            type: Object
+        }
+    },
     computed: {
         style(){
             return style

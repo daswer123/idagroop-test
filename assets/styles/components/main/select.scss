@@ -9,7 +9,13 @@
     appearance: none;
 
     margin-top: 12px;
+    user-select: none;
 
+}
+
+.select:hover{
+    cursor: pointer;
+    transform: translate(5px);
 }
 
 .arrow{
@@ -17,21 +23,21 @@
 }
 
 .arrow::after,
-.arrow::before{
+.arrow::before {
     @include after();
     background-color: #4959FF;
     width: 9px;
     height: 3px;
 
     right: -20px;
-    top: 16px;
+    top: 30px;
     transform: rotate(45deg);
 }
 
 .arrow::after{
     transform: rotate(-45deg);
     right: -25px;
-    top: 16px;
+    top: 30px;
 }
 
 @media (max-width: 900px) {

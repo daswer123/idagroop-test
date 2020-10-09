@@ -1,0 +1,53 @@
+.error{
+    display: flex;
+    height: 80vh;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F4F6;
+    border-radius: 48px;
+    
+}
+
+.error h1{
+        font-size: 40px;
+        line-height: 48px;
+        color: $black;
+        margin-bottom: 24px;
+}
+
+.error p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    color: $grey;
+}
+
+.error button{
+    @include clear-btn();
+    font-size: 16px;
+    line-height: 14px;
+
+    color: white;
+    background-color: $blue;
+    padding: 17px 32px;
+
+    border-radius: 12px;
+}
+
+@media(max-width: 500px){
+    .error h1{
+        font-size: 24px;
+        line-height: 29px;
+}
+
+.error button{
+    font-size: 14px;
+    line-height: 12px;
+
+    padding: 16px 24px;
+
+}
+
+}

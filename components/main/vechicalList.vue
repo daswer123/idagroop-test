@@ -1,18 +1,8 @@
 <template>
   <ul :class="style.vechicalList">
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
-      <VechicalItem/>
+      <VechicalItem 
+      v-for="vech in getVechicals" :key="vech.id"
+      v-bind:vech="vech"/>
   </ul>
 </template>
 
@@ -24,6 +14,9 @@ export default {
   computed : {
     style(){
       return style
+    },
+    getVechicals(){
+      return this.$store.getters.getAllVechicals
     }
   },
   components : {
